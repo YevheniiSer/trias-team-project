@@ -1,11 +1,12 @@
 {
-  "name": "vanilla-app-template",
+  "name": "trias-team-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://YevheniiSer.github.io/trias-team-project",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/trias-team-project/",
     "preview": "vite preview"
   },
   "devDependencies": {
