@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/trias-team-project/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/trias-team-project/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>trias-team-project</title>
     
-    <script type="module" crossorigin src="/trias-team-project/assets/index-8813be93.js"></script>
-    <link rel="stylesheet" href="/trias-team-project/assets/index-6999ff10.css">
+    <script type="module" crossorigin src="/trias-team-project/assets/index-9a143080.js"></script>
+    <link rel="stylesheet" href="/trias-team-project/assets/index-89d58343.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-  </nav>
-</header>
-
-
-    
-
-    <!-- Loads the specified .html file -->
-
+    <main>
+      
+      <section class="hero-section container">
+    <div class="hero-container">
+        <div class="hero-title-btn">
+            <h1 class="hero-title">Reviving the<br class="per"> traditional
+                <span class="hero-title-yel">Ukrainian</span>
+                artistry in every stitch.
+            </h1>
+            <button class="hero-button" type="button">Order
+                <svg class="hero-btn-icon" width="26" height="10" aria-label="icon order">
+                    <use href="../img/hero/icons.svg#icon-arrow"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="hero-star-text-container">
+            <svg class="hero-star" width="52" height="51" aria-label="icon star">
+                <use href="../img/hero/icons.svg#icon-star"></use>
+            </svg>
+            <span class="hero-star-text">all embroidery is made by hand</span>
+        </div>
+        <img class="hero-girl" srcset="
+            ../img/hero/girl_desktop.jpg 392w,
+            ../img/hero/girl_desktop@2x.jpg 784w,
+            ../img/hero/girl_tablet.jpg 413w,
+            ../img/hero/girl_tablet@2x.jpg 826w,
+            ../img/hero/girl_mobile.jpg 335w,
+            ../img/hero/girl_mobile@2x.jpg 670w"
+            sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (min-width: 375px) 335px"
+            src="../img/hero/girl_mobile.jpg"
+            alt="girl"
+            width="335"
+            height="545">
+        <img class="hero-container-ornament"
+            srcset="../img/hero/ukraine@2x.jpg 2x"
+            src="../img/hero/ukraine.jpg"
+            alt="ukraine ornament"
+            width="139"
+            height="98">
+    </div>
+</section>
+      
+      
+      
+      
+      
+    </main>
     
   </body>
 </html>
