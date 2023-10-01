@@ -1,5 +1,5 @@
 .hero-title-btn {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .hero-section {
@@ -75,8 +75,8 @@
     }
 
     .hero-title-btn {
-        padding-top: 26px;
-        padding-bottom: 0px;
+        margin-top: 26px;
+        margin-bottom: 0px;
     }
 
     .hero-section {
@@ -143,8 +143,7 @@
     }
 
     .hero-title-btn {
-        padding-top: 94px;
-        padding-bottom: 0px;
+        margin-top: 94px;
         margin-right: 15px;
     }
 
@@ -158,8 +157,7 @@
 }
 @media screen and (min-width: 1440px) {
     .hero-title-btn {
-        padding-top: 66px;
-        padding-bottom: 0px;
+        margin-top: 66px;
         margin-right: 61px;
     }
 
@@ -179,6 +177,6 @@
     }
 
     .hero-star-text-container {
-        padding-top: 66px;
+        margin-top: 66px;
     }
 }
