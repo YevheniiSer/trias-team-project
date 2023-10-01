@@ -17,7 +17,7 @@
     letter-spacing: -0.03em;
 }
 .section-title-yel {
-    color: var(--white, #ECD979);
+    color: var(--yellow, #ECD979);
     font-size: 32px;
     font-weight: 500;
     line-height: 1.37;
@@ -31,7 +31,7 @@
         }
     
     .section-title-yel {
-        color: var(--white, #ECD979);
+        color: var(--yellow, #ECD979);
         font-size: 44px;
         line-height: 1.32;
         }
