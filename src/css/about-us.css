@@ -1,0 +1,46 @@
+.about-us-text {
+    color: var(--gray);
+}
+
+.section-container {
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+    .about-us-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .descr-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .content-wrapper {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+
+
+    }
+
+    .section-container {
+        background-image: url(../img/about-us-img/ornament_mobile.png);
+        background-repeat: no-repeat;
+        background-position: right bottom 18px;
+    }
+
+    .about-us-text {
+        font-size: 14px;
+        line-height: normal;
+        letter-spacing: -0.04em;
+    }
+
+
+}
