@@ -1,0 +1,129 @@
+.our-collection-card {
+  position: relative;
+}
+
+.our-collection-card:first-child::before {
+  content: '';
+  background: url(../img/Our-collection/collection-mobile/background-element.png)
+    0 0 / 100% no-repeat;
+  width: 199px;
+  height: 177px;
+  position: absolute;
+  top: 214px;
+  left: -147px;
+  z-index: -1;
+}
+
+.our-collection-title {
+  color: var(--white);
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.our-collection-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.our-collection-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 335px;
+  gap: 18px;
+}
+
+.our-collection-img-box {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.our-collection-card-price {
+  display: flex;
+  width: 335px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.our-collection-price-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.our-collection-price-text {
+  color: var(--gray);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 768px) {
+  .our-collection-card:first-child::before {
+    background: url(../img/Our-collection/collection-tablet/background-element.png);
+    width: 338px;
+    height: 300px;
+    top: 116px;
+    left: -256px;
+  }
+
+  .our-collection-title {
+    line-height: 1.45;
+  }
+
+  .our-collection-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .our-collection-card {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .our-collection-price-title {
+    font-size: 18px;
+  }
+
+  .our-collection-price-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .our-collection-card:first-child::before {
+    background: url(../img/Our-collection/collection-desktop_1280/background-element.png);
+    top: 117px;
+    left: -270px;
+  }
+
+  .our-collection-cards {
+    gap: 40px 20px;
+  }
+
+  .our-collection-card {
+    width: calc((100% - 2 * 20px) / 3);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .our-collection-card:first-child::before {
+    background: url(../img/Our-collection/collection-desktop_1440/background-element.png);
+    top: 127px;
+    left: -270px;
+  }
+
+  .our-collection-card {
+    width: calc((100% - 2 * 20px) / 3);
+  }
+}
