@@ -1,12 +1,4 @@
-.about-us-text {
-    color: var(--gray);
-}
-
-.section-container {
-    padding-bottom: 80px;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
     .about-us-info-container {
         display: flex;
         flex-direction: column;
@@ -27,20 +19,27 @@
         align-items: flex-start;
         gap: 50px;
 
-
     }
 
     .section-container {
-        background-image: url(../img/about-us-img/ornament_mobile.png);
+        padding-bottom: 80px;
+        background-image: url(/img/about-us-img/ornament_mobile.png);
         background-repeat: no-repeat;
         background-position: right bottom 18px;
     }
 
     .about-us-text {
+        color: var(--gray);
         font-size: 14px;
         line-height: normal;
         letter-spacing: -0.04em;
     }
+}
 
-
+@media screen and (min-width: 768px) {
+    .section-container {
+        padding-bottom: 100px;
+        background-image: url(/img/about-us-img/ornament-tablet.png);
+        background-position: right bottom 50px;
+    }
 }
