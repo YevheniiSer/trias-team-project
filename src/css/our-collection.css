@@ -8,8 +8,7 @@
 
 .our-collection-card:first-child::before {
   content: '';
-  background: url(/img/our-collection/collection-mobile/background-element.png)
-    0 0 / 100% no-repeat;
+  background: url(/img/our-collection/collection-mobile/background-element.png) 0 0 / 100% no-repeat;
   width: 199px;
   height: 177px;
   position: absolute;
@@ -18,10 +17,11 @@
   z-index: -1;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .our-collection-card:first-child::before {
     background-image: url(/img/our-collection/collection-mobile/background-element@2x.png);
-    
+
   }
 }
 
@@ -75,7 +75,8 @@ img {
     left: -256px;
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
     .our-collection-card:first-child::before {
       background-image: url(/img/our-collection/collection-tablet/background-element@2x.png);
     }
@@ -116,7 +117,8 @@ img {
     left: -270px;
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
     .our-collection-card:first-child::before {
       background-image: url(/img/our-collection/collection-desktop_1280/background-element@2x.png);
       width: 338px;
