@@ -7,7 +7,7 @@
 .your-order-container::before {
     content: '';
     position: absolute;
-    background: url(../img/order/mobile/main-women.jpg)
+    background: url(/img/order/mobile/main-women.jpg)
     0 0 / 100% no-repeat;
     width: 375px;
     height: 550px;
@@ -169,7 +169,7 @@
 
 @media screen and (min-width: 768px) {
     .your-order-container::before {
-        background: url(../img/order/tablet/main-women.jpg)
+        background: url(/img/order/tablet/main-women.jpg)
         0 0 / 100% no-repeat;
         width: 768px;
         height: 776px;
@@ -211,7 +211,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        background-image: url(../img/order/elements.png);
+        background-image: url(/img/order/elements.png);
         width: 325px;
         height: 484px;
     }
@@ -220,7 +220,7 @@
 
 @media screen and (min-width: 1280px) {
     .your-order-container::before {
-        background: url(../img/order/desktop1280/main-women.jpg)
+        background: url(/img/order/desktop1280/main-women.jpg)
         0 0 / 100% no-repeat;
         width: 1280px;
         height: 776px;
@@ -235,7 +235,7 @@
         padding-bottom: 0px;
     }
     .women-li::before {
-        background-image: url(../img/order/elements1280.png);
+        background-image: url(/img/order/elements1280.png);
         width: 289px;
         height: 484px;
     }
@@ -243,7 +243,7 @@
 
 @media screen and (min-width: 1440px) {
     .your-order-container::before {
-        background: url(../img/order/desktop1440/main-women.jpg)
+        background: url(/img/order/desktop1440/main-women.jpg)
         0 0 / 100% no-repeat;
         width: 1440px;
         height: 776px;
@@ -252,7 +252,7 @@
         max-width: 666px;
     }
     .women-li::before {
-        background-image: url(../img/order/elements.png);
+        background-image: url(/img/order/elements.png);
         width: 325px;
         height: 484px;
     }
