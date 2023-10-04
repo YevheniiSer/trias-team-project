@@ -1,10 +1,14 @@
+.our-collection .container {
+  padding-bottom: 80px;
+}
+
 .our-collection-card {
   position: relative;
 }
 
 .our-collection-card:first-child::before {
   content: '';
-  background: url(../img/Our-collection/collection-mobile/background-element.png)
+  background: url(/img/our-collection/collection-mobile/background-element.png)
     0 0 / 100% no-repeat;
   width: 199px;
   height: 177px;
@@ -14,8 +18,14 @@
   z-index: -1;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .our-collection-card:first-child::before {
+    background-image: url(/img/our-collection/collection-mobile/background-element@2x.png);
+    
+  }
+}
+
 .our-collection-title {
-  color: var(--white);
   font-style: normal;
   text-align: center;
   margin-bottom: 40px;
@@ -23,29 +33,12 @@
 
 .our-collection-cards {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
-.our-collection-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 335px;
-  gap: 18px;
-}
-
-.our-collection-img-box {
+img {
   border-radius: 4px;
-  overflow: hidden;
-}
-
-.our-collection-card-price {
-  display: flex;
-  width: 335px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
 }
 
 .our-collection-price-title {
@@ -57,6 +50,8 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  margin-top: 18px;
+  margin-bottom: 8px;
 }
 
 .our-collection-price-text {
@@ -68,12 +63,22 @@
 }
 
 @media screen and (min-width: 768px) {
+  .our-collection .container {
+    padding-bottom: 100px;
+  }
+
   .our-collection-card:first-child::before {
-    background: url(../img/Our-collection/collection-tablet/background-element.png);
+    background: url(/img/our-collection/collection-tablet/background-element.png);
     width: 338px;
     height: 300px;
     top: 116px;
     left: -256px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .our-collection-card:first-child::before {
+      background-image: url(/img/our-collection/collection-tablet/background-element@2x.png);
+    }
   }
 
   .our-collection-title {
@@ -101,10 +106,22 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .our-collection .container {
+    padding-bottom: 150px;
+  }
+
   .our-collection-card:first-child::before {
-    background: url(../img/Our-collection/collection-desktop_1280/background-element.png);
+    background: url(/img/our-collection/collection-desktop_1280/background-element.png);
     top: 117px;
     left: -270px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .our-collection-card:first-child::before {
+      background-image: url(/img/our-collection/collection-desktop_1280/background-element@2x.png);
+      width: 338px;
+      height: 300px;
+    }
   }
 
   .our-collection-cards {
@@ -118,9 +135,13 @@
 
 @media screen and (min-width: 1440px) {
   .our-collection-card:first-child::before {
-    background: url(../img/Our-collection/collection-desktop_1440/background-element.png);
+    background: url(/img/our-collection/collection-desktop_1440/background-element.png);
     top: 127px;
     left: -270px;
+  }
+
+  .our-collection-card:first-child::before {
+    background-image: url(/img/our-collection/collection-desktop_1440/background-element@2x.png);
   }
 
   .our-collection-card {
