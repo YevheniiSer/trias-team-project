@@ -121,7 +121,7 @@
 }
 
 .mob-tel {
-  height: 48px;
+  height: 38px;
   font-size: 12px;
   line-height: 12px;
   color: #1c2225;
@@ -169,10 +169,12 @@
   }
 
   .mob-tel {
+    height: 48px;
+    line-height: 20px;
     font-size: 14px;
     padding: 14px 28px;
-    line-height: 20px;
   }
+
   .menu-close-button svg {
     width: 44px;
     height: 44px;
