@@ -1,3 +1,6 @@
+.our-collection {
+  padding-bottom: 80px;
+}
 .our-collection-card {
   position: relative;
 }
@@ -68,6 +71,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .our-collection {
+      padding-bottom: 100px;
+    }
   .our-collection-card:first-child::before {
     background: url(../img/Our-collection/collection-tablet/background-element.png);
     width: 338px;
@@ -101,6 +107,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .our-collection {
+      padding-bottom: 150px;
+    }
   .our-collection-card:first-child::before {
     background: url(../img/Our-collection/collection-desktop_1280/background-element.png);
     top: 117px;
