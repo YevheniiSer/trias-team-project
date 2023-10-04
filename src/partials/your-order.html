@@ -1,0 +1,53 @@
+<section class="your-order-section container">
+
+    <!-- <div class="main-women"></div> -->
+
+    <ul class="your-order-container">
+        <li class="women-li">
+            <img srcset="
+            /img/order/desktop1280/order-women.jpg 524w,
+            /img/order/desktop1280/order-women@2x.jpg 1048w,
+            /img/order/desktop1440/order-women.jpg 524w,
+            /img/order/desktop1440/order-women@2x.jpg 1048w,
+            /img/order/tablet/order-women.jpg 638w,
+            /img/order/tablet/order-women@2x.jpg 1376w,"
+            sizes="(min-width: 1280px) 524px, (min-width: 768px) 638px"
+            src="/img/order/tablet/order-women.jpg"
+            alt="blouse"
+            width="638"
+            height="521">
+        </li>
+        <li>
+            <h2 class="section-title">
+                <span id="your-order-section" class="accent">Your order</span> is our priority: Personalized approach and quality of service
+            </h2>
+
+            <form class="main-form">
+
+                <div class="label-div">
+                    <input type="text" name="user-name" id="user-name" class="input" required pattern=".*\S+.*">
+                    <span>Enter your full name</span>
+                </div>
+
+                <div class="label-div">
+                    <input type="email" name="contact_email" id="contact_email" class="input" required pattern=".*\S+.*">
+                    <span>Enter your email</span>
+                </div>
+
+                <div class="label-div">
+                    <textarea class="comment-text" id="user-comment" name="user-comment" required pattern=".*\S+.*"></textarea>
+                    <span>Comments</span>
+                </div>
+
+                <div class="button-div">
+                    <button class="button" type="submit">
+                        Send 
+                        <svg width="26" height="10" class="icon-checkbox" aria-label="icon order">
+                            <use href="/img/order/icons.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </li>
+    </ul>
+</section>

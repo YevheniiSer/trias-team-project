@@ -1,0 +1,259 @@
+.your-order-section {
+    margin-bottom: 80px;
+    position: relative;
+    padding-top: 550px;
+}
+
+.your-order-container::before {
+    content: '';
+    position: absolute;
+    background: url(/img/order/mobile/main-women.jpg)
+    0 0 / 100% no-repeat;
+    width: 375px;
+    height: 550px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+}
+
+.your-order-container {
+    margin-top: 80px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.your-order-section .women-li img {
+    border-radius: 4px;
+}
+
+.your-order-section .women-li {
+    display: none;
+}
+
+.your-order-section .section-title {
+    color: var(--white);
+    margin-bottom: 40px
+}
+
+.your-order-section .section-title span {
+    color: var(--yellow);
+}
+
+.your-order-section .main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.your-order-section .main-form input {
+    width: 335px;
+    padding: 14px 16px;
+    border-radius: 15px;
+    border: 1px solid var(--gray);
+    background-color: transparent;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    position: relative;
+    z-index: 2;
+}
+
+.your-order-section .main-form textarea {
+    height: 196px;
+    width: 335px;
+    padding: 14px 16px;
+    border-radius: 15px;
+    border: 1px solid var(--gray);
+    background-color: transparent;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    position: relative;
+    z-index: 2;
+}
+
+.your-order-section .label-div {
+    position: relative;
+    display: block;
+}
+
+.your-order-section .main-form span {
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    z-index: 1;
+}
+
+.your-order-section .button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.your-order-section button {
+    display: flex;
+    width: 145px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid var(--gray);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+}
+
+.your-order-section button svg {
+    margin-left: 10px;
+    fill: var(--yellow);
+    rotate: -30deg;
+}
+
+.your-order-section button:hover svg,
+.your-order-section button:focus svg {
+    transition: 1s;
+    rotate: 0deg;
+}
+
+.your-order-section button:not(:hover) svg,
+.your-order-section button:not(:focus) svg {
+    transition: 1s;
+}
+
+.your-order-section .main-form input:focus + span,
+.your-order-section .main-form input:valid + span {
+    transform: translateY(-25px);
+    transition: 0.4s;
+    color: var(--white);
+    font-size: 16px;
+    background: #1C2225;
+    z-index: 3;
+    padding: 0 7px;
+}
+
+.your-order-section .main-form input:not(:focus) + span,
+.your-order-section .main-form input:not(:valid) + span {
+    transition: 0.4s;
+}
+
+.your-order-section .main-form textarea:not(:focus) + span,
+.your-order-section .main-form textarea:not(:valid) + span {
+    transition: 0.4s;
+}
+
+.your-order-section .main-form textarea:focus + span,
+.your-order-section .main-form textarea:valid + span {
+    transform: translateY(-25px);
+    transition: 0.4s;
+    color: var(--white);
+    font-size: 16px;
+    background: #1C2225;
+    z-index: 3;
+    padding: 0 7px;
+}
+
+@media screen and (min-width: 768px) {
+    .your-order-container::before {
+        background: url(/img/order/tablet/main-women.jpg)
+        0 0 / 100% no-repeat;
+        width: 768px;
+        height: 776px;
+    }
+    .your-order-section .women-li {
+        display: unset;
+    }
+    .your-order-section {
+        padding-top: 776px;
+        margin-bottom: 100px;
+        padding-bottom: 79px;
+    }
+    .your-order-container {
+        margin-top: 100px;
+        flex-direction: column-reverse;
+    }
+    .your-order-section .section-title {
+        max-width: 542px;
+    }
+    .your-order-section .button-div {
+        justify-content: start;
+    }
+    .your-order-section .main-form input {
+        width: 508px;
+    }
+    .your-order-section .main-form textarea {
+        width: 508px;
+    }
+    .your-order-section button {
+        width: 168px;
+        letter-spacing: -0.64px;
+        font-size: 16px;
+    }
+    .women-li img {
+        margin-left: auto;
+    }
+    .women-li::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url(/img/order/elements.png);
+        width: 325px;
+        height: 484px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .your-order-container::before {
+        background: url(/img/order/desktop1280/main-women.jpg)
+        0 0 / 100% no-repeat;
+        width: 1280px;
+        height: 776px;
+    }
+    .your-order-container {
+        margin-top: 100px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .your-order-section {
+        margin-bottom: 150px;
+        padding-bottom: 0px;
+    }
+    .women-li::before {
+        background-image: url(/img/order/elements1280.png);
+        width: 289px;
+        height: 484px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .your-order-container::before {
+        background: url(/img/order/desktop1440/main-women.jpg)
+        0 0 / 100% no-repeat;
+        width: 1440px;
+        height: 776px;
+    }
+    .your-order-section .section-title {
+        max-width: 666px;
+    }
+    .women-li::before {
+        background-image: url(/img/order/elements.png);
+        width: 325px;
+        height: 484px;
+    }
+}
