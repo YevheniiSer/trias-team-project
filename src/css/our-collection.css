@@ -1,4 +1,4 @@
-.our-collection {
+.our-collection .container {
   padding-bottom: 80px;
 }
 
@@ -17,11 +17,11 @@
   z-index: -1;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .our-collection-card:first-child::before {
     background-image: url(/img/our-collection/collection-mobile/background-element@2x.png);
-
   }
 }
 
@@ -63,7 +63,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .our-collection{
+  .our-collection .container {
     padding-bottom: 100px;
   }
 
@@ -75,10 +75,12 @@ img {
     left: -256px;
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .our-collection-card:first-child::before {
       background-image: url(/img/our-collection/collection-tablet/background-element@2x.png);
+      background-size: 338px 300px;
     }
   }
 
@@ -107,7 +109,7 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  .our-collection {
+  .our-collection .container {
     padding-bottom: 150px;
   }
 
@@ -117,12 +119,12 @@ img {
     left: -270px;
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .our-collection-card:first-child::before {
       background-image: url(/img/our-collection/collection-desktop_1280/background-element@2x.png);
-      width: 338px;
-      height: 300px;
+      background-size: 338px 300px;
     }
   }
 
@@ -142,8 +144,12 @@ img {
     left: -270px;
   }
 
-  .our-collection-card:first-child::before {
-    background-image: url(/img/our-collection/collection-desktop_1440/background-element@2x.png);
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .our-collection-card:first-child::before {
+      background-image: url(/img/our-collection/collection-desktop_1440/background-element@2x.png);
+    }
   }
 
   .our-collection-card {
