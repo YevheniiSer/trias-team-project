@@ -112,7 +112,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1208px) {
 screen and (min-resolution: 2dppx) and (min-width: 1440px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     .section-container {
-        background-image: url(../img/about-us-img/ornament-desk-large@2x.png);
+        background-image: url(/img/about-us-img/ornament-desk-large@2x.png);
         background-size: 545px 484px;
     }
 }
